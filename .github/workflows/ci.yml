@@ -28,7 +28,7 @@ jobs:
         uses: abinmn/gcp-storage-bucket-action@v1.0
         with:
           service_key: "{{ secrets.service_key }}"
-          project: "{{ secrets.project }}"
+          project: burner-ritgirdh
           home_page_path: /test
           error_page_path: /error
           build_folder: "{{ github.workspace }}"
