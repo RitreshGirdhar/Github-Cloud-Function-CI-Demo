@@ -31,9 +31,7 @@ jobs:
         run: |
           echo "A initial message"
           mvn clean install
-          ls -lrt
-          pwd
-          zip -r test.zip .
+          zip -r github-cloud-function-ci-demo.zip .
           ls -lrt
 
       - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
@@ -44,14 +42,14 @@ jobs:
       - id: upload-file
         uses: GoogleCloudPlatform/github-actions/upload-cloud-storage@master
         with:
-          path: test.zip
+          path: github-cloud-function-ci-demo.zip
           destination: "ritresh-cloud-storage-test"
 
       - id: deploy
         uses: GoogleCloudPlatform/github-actions/deploy-cloud-functions@master
         with:
-          name:
-          runtime: nodejs10
+          name: github-cloud-function-ci-demo
+          runtime: java11
           credentials: ${{ secrets.gcp_credentials }}
 
       # Example of using the output
