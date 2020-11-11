@@ -33,3 +33,8 @@ jobs:
           error_page_path: gs://ritresh-cloud-storage-test
           build_folder: "{{ github.workspace }}"
 
+      - id: upload-file
+        uses: GoogleCloudPlatform/github-actions/upload-cloud-storage@master
+        with:
+          path: pom.xml
+          destination: gs://ritresh-cloud-storage-test/
