@@ -27,7 +27,7 @@ jobs:
       - name: Deploy
         uses: abinmn/gcp-storage-bucket-action@v1.0
         with:
-          service_key: "{{ secrets.service_key }}"
+          service_key: "${{ secrets.service_key }}"
           project: burner-ritgirdh
           home_page_path: /test
           error_page_path: /error
