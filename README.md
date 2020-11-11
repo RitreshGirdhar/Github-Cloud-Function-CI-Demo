@@ -13,7 +13,7 @@ mvn function:run
 
 ### Test application on yoir local environment
 ```
-  curl -ivk http://localhost:8080/
+curl -ivk http://localhost:8080/
 ```
 
 
