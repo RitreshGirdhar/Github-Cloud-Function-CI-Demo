@@ -26,7 +26,7 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-      - name: GCP Cloud Storage: Deploy
+      - name: Deploy
         uses: abinmn/gcp-storage-bucket-action@v1.0
         with:
           service_key: base64 encoded gcp service account key
