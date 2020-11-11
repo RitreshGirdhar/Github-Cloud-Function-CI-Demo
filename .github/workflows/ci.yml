@@ -28,4 +28,4 @@ jobs:
         uses: GoogleCloudPlatform/github-actions/upload-cloud-storage@master
         with:
           path: pom.xml
-          destination: gs://ritresh-cloud-storage-test/
+          destination: ritresh-cloud-storage-test
