@@ -34,9 +34,7 @@ jobs:
           ls -lrt
           pwd
           zip -r test.zip .
-          cd target/
           ls -lrt
-
 
       - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
         with:
