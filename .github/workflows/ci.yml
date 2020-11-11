@@ -29,8 +29,8 @@ jobs:
       - name: Deploy
         uses: abinmn/gcp-storage-bucket-action@v1.0
         with:
-          service_key: base64 encoded gcp service account key
-          project: "${{ ritresh.project }}"
+          service_key: "${{ SERVICEKEY }}"
+          project: "${{ PROJECT }}"
           home_page_path: /test
           error_page_path: /error
           build_folder: "${{ github.workspace }}"
