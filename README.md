@@ -1,4 +1,4 @@
-# Github cloud function CI demo
+# Github Cloud Function CI Demo
 
 
 ### Build application using below command
