@@ -1,1 +1,1 @@
-# github-cloud-function-ci-demo
+# Github cloud function CI demo
