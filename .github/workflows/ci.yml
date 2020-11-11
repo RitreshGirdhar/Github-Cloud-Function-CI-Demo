@@ -44,5 +44,5 @@ jobs:
       - id: upload-file
         uses: GoogleCloudPlatform/github-actions/upload-cloud-storage@master
         with:
-          path: pom.xml
+          path: target/github-cloud-function-ci-demo.jar
           destination: "ritresh-cloud-storage-test"
