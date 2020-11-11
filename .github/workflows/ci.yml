@@ -33,6 +33,8 @@ jobs:
           mvn clean install
           ls -lrt
           pwd
+          cd target/
+          ls -lrt
 
       - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
         with:
