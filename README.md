@@ -1,5 +1,6 @@
 # Github Cloud Function CI Demo
 
+This application will help you in building and publishing Cloud Function on GCP environment using Github Actions Workflow
 
 
 ### Build application using below command
